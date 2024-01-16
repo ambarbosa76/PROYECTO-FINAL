@@ -1,0 +1,243 @@
+/*HEADER*/
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0 15px 0;
+    background-color: #ebded5;
+}
+
+.tittle{
+    color: black;
+    margin-top: 3%;
+    text-align: left;
+    display: flex;
+}
+
+.navbar {
+    display: flex;
+    gap: 30%;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    justify-content: space-around;
+    margin-top: 3%;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    margin-top: 3%;
+}
+
+.logo{
+    width: 10%;
+    margin-left: 2%;
+}
+
+/*PAGINA PRINCIPAL*/
+.container-product{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    align-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.item{
+    max-width: 300px;
+    margin: auto;
+    border: 1px solid #ebded5;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.item img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.item .inf-product h2{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+}
+
+.item .inf-product .description{
+    display: block;
+    text-align: center;
+}
+
+.item .inf-product .price{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+
+.item .inf-product .btn-add-cart{
+    display: flex;
+    background-color: #ebded5;
+    color: black;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    margin-left: 23%;
+}
+
+/*CARRIO DE COMPRAS*/
+  .container-icon{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+    }
+
+    .container-cart-icon{
+        display: flex;
+        justify-content: space-between;
+        flex: 0.8;
+    }
+
+    .name-cart{
+        font-size: 20px;
+    }
+
+    .count-products{
+        font-weight: 700;
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .contador-productos{
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    .close-button{
+        width: 25px;
+        height: 25px;
+    }
+
+.icon-close:hover{
+    stroke: black;
+    cursor: pointer;
+}
+
+/*CONTACTO*/
+.form label{
+    display: flex;
+    grid-column: auto;
+    align-content: center;
+    margin-left: 45%;
+    padding: 10px;
+}
+
+.form input{
+    display: flex;
+    grid-column: auto;
+    align-content: center;
+    margin-left: 45%;
+    padding: 10px;
+    background: #ebded5;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+.form h2{
+    text-align:  center;
+    margin-bottom: 7px;
+}
+
+.form .btn-enviar{
+    display: flex;
+    background-color: #ebded5;
+    color: black;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    margin-left: 50%;
+    margin-bottom: 5%;
+}
+
+/*ALTA*/
+.form-Alta{
+    display: grid;
+    grid-column: auto;
+    align-content: center;
+    padding: 10px;
+    background: #ebded5;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    margin-bottom: 2%;
+    margin-top: 1%;
+}
+
+.form-Alta h2{
+    text-align:  center;
+    margin-bottom: 7px;
+}
+
+.form-Alta .btn-agregar{
+    display: block;
+    background-color: #ebded5;
+    color: black;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+/*NOSOTROS*/
+.article{
+    display: flex;
+    padding: 30px 0px;
+    text-align: center;
+    font-size: 14px;
+    margin:20px auto;
+    line-height: 1.3;
+    width: 50%;
+}
+
+.article img {
+    float: left; 
+    margin-right: 20px; 
+    width: 40%;
+}
+
+.article p {
+    margin: 30px; 
+}
+
+
+/*CARRITO DE COMPRAS TOTAL*/
+.cart-total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.total-cart{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.btn-clear-all{
+    display: none;
+    font-size: 20px;
+    margin: 8px;
+    padding: 7px;
+}
+    
